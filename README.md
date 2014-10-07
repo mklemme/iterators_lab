@@ -42,10 +42,10 @@ Pretending we implemented the following methods, update this README with a descr
     //     console.log("Hello, " + friends[i] + "!");
     // }
 
-// cool new way, with the .forEach iterator
-friends.forEach(function (buddy) {
-    console.log("Hello, " + buddy + "!");
-});
+    // cool new way, with the .forEach iterator
+    friends.forEach(function (buddy) {
+        console.log("Hello, " + buddy + "!");
+    });
 
 #### Map
 
