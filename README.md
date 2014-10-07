@@ -33,13 +33,16 @@ Pretending we implemented the following methods, update this README with a descr
 
 #### forEach
 
-    forEach executes the provided callback once for each element present in the array in
-    ascending order. It is not invoked for indexes that have been deleted or elided.
-    However, it is executed for elements that are present and have the value undefined.
+##### MDN version
 
-    My Version:
-    Loops over an array and executes an attached function
+forEach executes the provided callback once for each element present in the array in
+ascending order. It is not invoked for indexes that have been deleted or elided.
+However, it is executed for elements that are present and have the value undefined.
 
+My Version:
+Loops over an array and executes an attached function
+
+##### Example:
     var friends = ["Markus", "Tim", "Ilias", "Elie"];
 
     // old way, with a for loop
@@ -54,14 +57,15 @@ Pretending we implemented the following methods, update this README with a descr
 
 #### Map
 
-    Map calls a provided callback function once for each element in an array, in order,
-    and constructs a new array from the results. callback is invoked only for indexes of
-    the array which have assigned values; it is not invoked for indexes that are
-    undefined, those which have been deleted or which have never been assigned values.
+##### MDN version
+Map calls a provided callback function once for each element in an array, in order,
+and constructs a new array from the results. callback is invoked only for indexes of
+the array which have assigned values; it is not invoked for indexes that are
+undefined, those which have been deleted or which have never been assigned values.
 
-    My version:
-    Does same as for each, but performs a callback and adds the queried objects into a
-    new array
+##### My version:
+Does same as for each, but performs a callback and adds the queried objects into a
+new array
 
 ##### Example:
 
@@ -69,8 +73,6 @@ Pretending we implemented the following methods, update this README with a descr
         return person.toUpperCase();
     });
     console.log("");
-    console.log("Map Function");
-    console.log("Sometimes we want to loop over an array and build a new array in the process. This is what map helps us solve. It is like forEach, but it returns the new array that is created.");
     console.log("Cased");
     console.log(cased);
 
@@ -85,8 +87,6 @@ Pretending we implemented the following methods, update this README with a descr
     var evenLengthNames = names.filter(isEven);
     var oddLengthNames = names.filter(isOdd);
     console.log("");
-    console.log("Filter Function");
-    console.log("Filter is an iterator that loops through your array and filters it down to a subset of the original array. A callback is called on each element of the original array: if it returns true, then the element is included in the new array, otherwise it is excluded.");
     console.log("Even names");
     console.log(evenLengthNames);
     // Should output
