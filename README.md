@@ -72,7 +72,6 @@ new array
     var cased = names.map(function (person) {
         return person.toUpperCase();
     });
-    console.log("");
     console.log("Cased");
     console.log(cased);
 
@@ -95,16 +94,11 @@ Filter loops over an array. If the value of the callback returns a true value, i
 ##### Example:
     var evenLengthNames = names.filter(isEven);
     var oddLengthNames = names.filter(isOdd);
-    console.log("");
-    console.log("Filter Function");
-    console.log("Filter is an iterator that loops through your array and filters it down to a subset of the original array. A callback is called on each element of the original array: if it returns true, then the element is included in the new array, otherwise it is excluded.");
     console.log("Even names");
     console.log(evenLengthNames);
     // Should output
     // > ["elie", "markus"]
 
-
-    console.log("");
     console.log("Odd names");
     console.log(oddLengthNames);
     // Should output
