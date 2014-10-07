@@ -15,7 +15,7 @@ Research the following term and summarize your findings on it two to three sente
 
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
-#### Max
+##### Max
 
     Returns the highest value of two numbers
 
@@ -23,7 +23,7 @@ Pretending we implemented the following methods, update this README with a descr
 
     // returns 10
 
-#### Min
+##### Min
 
     Returns the number with the lowest value
 
@@ -33,16 +33,18 @@ Pretending we implemented the following methods, update this README with a descr
 
 #### forEach
 
-##### MDN version
+###### MDN version
 
 forEach executes the provided callback once for each element present in the array in
 ascending order. It is not invoked for indexes that have been deleted or elided.
 However, it is executed for elements that are present and have the value undefined.
 
-My Version:
+###### My Version:
+
 Loops over an array and executes an attached function
 
-##### Example:
+###### Example:
+
     var friends = ["Markus", "Tim", "Ilias", "Elie"];
 
     // old way, with a for loop
@@ -57,17 +59,19 @@ Loops over an array and executes an attached function
 
 #### Map
 
-##### MDN version
+###### MDN version
+
 Map calls a provided callback function once for each element in an array, in order,
 and constructs a new array from the results. callback is invoked only for indexes of
 the array which have assigned values; it is not invoked for indexes that are
 undefined, those which have been deleted or which have never been assigned values.
 
-##### My version:
+###### My version:
+
 Does same as for each, but performs a callback and adds the queried objects into a
 new array
 
-##### Example:
+###### Example:
 
     var cased = names.map(function (person) {
         return person.toUpperCase();
@@ -86,12 +90,15 @@ new array
 #### Filter
 
 ###### MDN Version
+
 Filter calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a true value. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
 
-##### My version:
+###### My version:
+
 Filter loops over an array. If the value of the callback returns a true value, it adds the value to a new array.
 
-##### Example:
+###### Example:
+
     var evenLengthNames = names.filter(isEven);
     var oddLengthNames = names.filter(isOdd);
     console.log("Even names");
