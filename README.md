@@ -19,17 +19,17 @@ Pretending we implemented the following methods, update this README with a descr
 
 Returns the highest value of two numbers
 
-`Math.max(5, 10);
+    Math.max(5, 10);
 
-// returns 10`
+    // returns 10
 
 * `min`
 
 Returns the number with the lowest value
 
-`Math.min(5, 10);
+    Math.min(5, 10);
 
-// returns 5`
+    // returns 5
 
 * `each`
 * `map`
