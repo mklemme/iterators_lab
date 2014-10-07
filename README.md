@@ -15,7 +15,7 @@ Research the following term and summarize your findings on it two to three sente
 
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
-#### `max`
+#### Max
 
     Returns the highest value of two numbers
 
@@ -23,13 +23,37 @@ Pretending we implemented the following methods, update this README with a descr
 
     // returns 10
 
-#### `min`
+#### Min
 
     Returns the number with the lowest value
 
     Math.min(5, 10);
 
     // returns 5
+
+#### forEach
+
+    Loops over an array and executes an attached function
+
+    var friends = ["Markus", "Tim", "Ilias", "Elie"];
+
+    // old way, with a for loop
+    // for (var i = 0; i < friends.length; i++) {
+    //     console.log("Hello, " + friends[i] + "!");
+    // }
+
+// cool new way, with the .forEach iterator
+friends.forEach(function (buddy) {
+    console.log("Hello, " + buddy + "!");
+});
+
+#### Map
+
+#### Filter
+
+#### Reduce
+
+#### Reject
 
 * `each`
 * `map`
