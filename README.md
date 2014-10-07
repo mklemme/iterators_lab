@@ -33,7 +33,9 @@ Pretending we implemented the following methods, update this README with a descr
 
 #### forEach
 
-    forEach executes the provided callback once for each element present in the array in ascending order. It is not invoked for indexes that have been deleted or elided. However, it is executed for elements that are present and have the value undefined.
+    forEach executes the provided callback once for each element present in the array in
+    ascending order. It is not invoked for indexes that have been deleted or elided.
+    However, it is executed for elements that are present and have the value undefined.
 
     My Version:
     Loops over an array and executes an attached function
@@ -52,7 +54,10 @@ Pretending we implemented the following methods, update this README with a descr
 
 #### Map
 
-    Map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes that are undefined, those which have been deleted or which have never been assigned values.
+    Map calls a provided callback function once for each element in an array, in order,
+    and constructs a new array from the results. callback is invoked only for indexes of
+    the array which have assigned values; it is not invoked for indexes that are
+    undefined, those which have been deleted or which have never been assigned values.
 
     My version:
     Does same as for each, but performs a callback and adds the queried objects into a new array
