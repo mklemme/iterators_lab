@@ -15,17 +15,17 @@ Research the following term and summarize your findings on it two to three sente
 
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
-* `max`
+#### `max`
 
-Returns the highest value of two numbers
+    Returns the highest value of two numbers
 
     Math.max(5, 10);
 
     // returns 10
 
-* `min`
+#### `min`
 
-Returns the number with the lowest value
+    Returns the number with the lowest value
 
     Math.min(5, 10);
 
