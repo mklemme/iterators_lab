@@ -84,9 +84,20 @@ new array
       return name.length % 2 !== 0;
     };
 
+#### Filter
+
+###### MDN Version
+Filter calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a true value. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
+
+##### My version:
+Filter loops over an array. If the value of the callback returns a true value, it adds the value to a new array.
+
+##### Example:
     var evenLengthNames = names.filter(isEven);
     var oddLengthNames = names.filter(isOdd);
     console.log("");
+    console.log("Filter Function");
+    console.log("Filter is an iterator that loops through your array and filters it down to a subset of the original array. A callback is called on each element of the original array: if it returns true, then the element is included in the new array, otherwise it is excluded.");
     console.log("Even names");
     console.log(evenLengthNames);
     // Should output
@@ -98,14 +109,6 @@ new array
     console.log(oddLengthNames);
     // Should output
     // > ["tim", "ilias"]
-
-
-#### Filter
-
-    Filter calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a true value. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
-
-    My version:
-    Filter loops over an array. If the value of the callback returns a true value, it adds the value to a new array.
 
 #### Reduce
 
