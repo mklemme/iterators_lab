@@ -16,6 +16,11 @@ Research the following term and summarize your findings on it two to three sente
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
 * `max`
+
+Returns the highest value of two numbers
+`Math.max(5, 10);
+returns 10`
+
 * `min`
 * `each`
 * `map`
