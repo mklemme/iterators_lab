@@ -115,15 +115,6 @@ Filter loops over an array. If the value of the callback returns a true value, i
 
 #### Reject
 
-* `each`
-* `map`
-* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-* `reject`: [note](http://underscorejs.org/#reject)
-
-Use the notes provided to help guide you explanation.
-
-
 ### Phase-2
 
 * Write a test in the `spec` folder for `min` and implement it in the `src/iterators.js` folder. There is a test for a `max` method already if you'd like to use that as inspiration.
