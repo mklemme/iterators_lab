@@ -1,9 +1,25 @@
+// Test framework
 var expect = require('chai').expect;
+
+// Test module variables
 var Iterators = require('../iterators.js');
+
+// global variables
+var myarr;
+
+// helper functions
+var helperAdd = function (a){
+  return (a + 1) ;
+};
+var helperIsEven = function (a){
+  if( a % 2 === 0){
+    return true;
+  } else {
+    return false; }
+};
 
 describe('Iterators', function () {
   describe('Max function', function () {
-    var myArr;
     beforeEach(function () {
       myArr = [66,22,67,34];
     });
@@ -16,7 +32,6 @@ describe('Iterators', function () {
     });
   });
   describe('Min function', function () {
-    var myArr;
     beforeEach(function () {
       myArr = [66,22,67,34];
     });
@@ -29,72 +44,41 @@ describe('Iterators', function () {
     });
   });
   describe('forEach function', function(){
-    var myArr;
     beforeEach(function () {
       myArr = [66,22,67,34];
-      Addone = function (a){
-        return (a + 1) ;
-        };
     });
     it("should return myArr + 1 ", function(){
-      expect(Iterators.forEach(myArr, Addone)).to.eql([67,23,68,35]);
+      expect(Iterators.forEach(myArr, helperAdd)).to.eql([67,23,68,35]);
     }
-
-  );
-});
-
-  describe('#map', function(){
-
-    var myArr;
+    );
+  });
+  describe('Map Function', function(){
     beforeEach(function () {
       myArr = [66,22,67,34];
-      Addone = function (a){
-        return (a + 1) ;
-        };
     });
     it("should return myArr + 1 ", function(){
-      expect(Iterators.map(myArr, Addone)).to.eql([67,23,68,35]);
+      expect(Iterators.map(myArr, helperAdd)).to.eql([67,23,68,35]);
     }
-
- );
-});
-
-
-  describe('#filter', function(){
-
-    var myArr;
+    );
+  });
+  describe('Filter Function', function(){
     beforeEach(function () {
       myArr = [66,22,67,34];
-
-      DivisbleByTwo = function (a){
-        if( a % 2 === 0){
-          return true;
-        } else {
-          return false; }
-        };
-
-    });
-    it("should return only elements divisible by two", function(){
-      expect(Iterators.filter(myArr, DivisbleByTwo)).to.eql([66,22,34]);
+      });
+    it("should return only if the elements are even", function(){
+      expect(Iterators.filter(myArr, helperIsEven)).to.eql([66,22,34]);
     }
- );
-});
-
-
-  describe('#reduce', function(){
-
-    var myArr;
+    );
+  });
+  describe('Reduce Function', function(){
     var inital;
     beforeEach(function () {
       myArr = [1,2,3,4];
       initial= 10;
+      it("should start from ten then reduce array, resulting in 20", function(){
+        expect(Iterators.reduce(initial, myArr)).to.equal(20);
+      }
+      );
     });
-
-    it("should reduce array to 20 with initial value of 10", function(){
-      expect(Iterators.reduce(initial, myArr)).to.equal(20);
-    }
-
- );
-});
-
+  });
 });
